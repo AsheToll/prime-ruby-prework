@@ -22,34 +22,34 @@
 # should I return array of # it's divisible by?
     
 # Add code here!
-def prime?(int)
+#def prime?(int)
   # create range of numbers to
   # iterate over for divisibility
-  range = (2..int - 1).to_a
-  factors = []
+ # range = (2..int - 1).to_a
+ # factors = []
   
   # for each number in array range
   # see if int is divisible and
   # doesn't leave a remainder
-  range.each do |num|
-    if int > 0 && int % num != 0
-      return true
-    elsif int < 0
-      return false
-    else
-      factors << num
-      return false
-    end
+  #range.each do |num|
+    #if int > 0 && int % num != 0
+     # return true
+    #elsif int < 0
+     # return false
+    #else
+     # factors << num
+   #   return false
+    #end
     # while int % num == 0
     #  factors << num
     #  return false
     # end
     # return true
-  end
-    factors
-end
+  #end
+  #  factors
+# end
 
-int < 0 # negative
+# int < 0 # negative
 
 def prime?(int)
   if int < 0
