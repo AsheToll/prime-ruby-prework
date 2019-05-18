@@ -52,11 +52,8 @@
 # int < 0 # negative
 
 def prime?(int)
-  if int <= 1
-    return false
-  end
   (2..int - 1).each do |num|
-    return false if int % num == 0
+    return false if int % num == 0 || int <= 1
   end
   return true
 end
